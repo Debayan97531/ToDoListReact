@@ -1,0 +1,88 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(90, 65, 65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.box {
+  width: 600px;
+  height: 600px;
+  background-color: blanchedalmond;
+  border: 2px solid rgb(26, 5, 5);
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  /* overflow: scroll; */
+}
+.box-2 {
+  background-color: rgb(104, 51, 209);
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 28%;
+  font-size: 45px;
+}
+#item {
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px;
+}
+#item:focus {
+  background-color: mediumspringgreen;
+}
+#item2 {
+  width: 12%;
+  font-size: 25px;
+  background-color: rgb(64, 224, 64);
+  cursor: pointer;
+}
+#item2:focus {
+  background-color: rgb(55, 100, 55);
+}
+#to-do-box {
+  margin-top: 20px;
+  list-style: none;
+}
+#to-do-box li {
+  background-color: skyblue;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 30px;
+  text-align: justify;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+#to-do-box li:hover {
+  background-color: rgb(139, 79, 0);
+}
+#to-do-box li i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.done {
+  text-decoration: line-through;
+  color: black;
+  background-color: grey !important;
+}
